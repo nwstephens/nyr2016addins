@@ -150,7 +150,8 @@ variableProfiler <- function()
 
     observeEvent(input$done, {
       x <- out$filters[!duplicated(out$filters)]
-      x <- paste(x, collapse = '\n')
+      x <- paste0(x, collapse = '\n')
+      x <- paste0(x, '\n')
       stopApp(insertText(x))
     })
 
