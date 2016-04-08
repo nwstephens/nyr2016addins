@@ -1,0 +1,18 @@
+Package: nyr2016addins
+Type: Package
+Title: Addins for 2016 New York R Conference
+Version: 0.1.0
+Author: Nathan Stephens
+Maintainer: Nathan Stephens <nwstephens@gmail.com>
+Description: A few example addins for demonstration purposes
+Depends:
+    R (>= 3.0.0)
+Imports:
+    shiny (>= 0.13),
+    miniUI (>= 0.1.1),
+    rstudioapi (>= 0.4),
+    formatR,
+    ggplot2
+License: GPL
+LazyData: TRUE
+RoxygenNote: 5.0.1

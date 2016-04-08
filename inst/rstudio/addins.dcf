@@ -1,0 +1,9 @@
+Name: ODBC Connect
+Description: Connect to a data source.
+Binding: selectConn
+Interactive: true
+
+Name: Variable Profiler
+Description: Univariate profiler.
+Binding: variableProfiler
+Interactive: true
