@@ -7,3 +7,8 @@ Name: Variable Profiler
 Description: Univariate profiler.
 Binding: variableProfiler
 Interactive: true
+
+Name: Format Source
+Description: Format R source code with formatR (using default args).
+Binding: formatSource
+Interactive: false
