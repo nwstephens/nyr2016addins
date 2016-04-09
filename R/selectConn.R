@@ -1,4 +1,3 @@
-#' @export
 selectConn <- function() {
   ui <- miniPage(
     gadgetTitleBar("ODBC Connect"),
