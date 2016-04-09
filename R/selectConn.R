@@ -8,9 +8,9 @@ selectConn <- function() {
       ), width='100%'),
       p(strong('Port')),
       verbatimTextOutput("selectedPort"),
-      textInput('database', 'Database', 'airontime', width='100%'),
-      textInput('uid', 'User ID', c('rstudioadmin'), width='100%'),
-      passwordInput("pwd", "Password", '1111', width='100%')
+      textInput('database', 'Database', '', width='100%'),
+      textInput('uid', 'User ID', '', width='100%'),
+      passwordInput("pwd", "Password", '', width='100%')
     )
   )
 
@@ -31,16 +31,16 @@ selectConn <- function() {
     serverEndpoint <- reactive({
       switch(
         input$server,
-        `SQL Server`  = 'sol-eng-sqlserv.cihykudhzbgw.us-west-2.rds.amazonaws.com',
-        `Progress`    = 'sol-eng-postgre.cihykudhzbgw.us-west-2.rds.amazonaws.com'
+        `SQL Server`  = 'mysshost',
+        `Progress`    = 'mypsqlhost'
       )
     })
 
     driver <- reactive({
       switch(
         input$server,
-        `SQL Server` = '/opt/Progress/DataDirect/Connect64_for_ODBC_71/lib/ddsqls27.so',
-        `Postgres`   = '/opt/Progress/DataDirect/Connect64_for_ODBC_71/lib/ddpsql27.so'
+        `SQL Server` = 'myssdriver.so',
+        `Postgres`   = 'mypsqlhost.so'
       )
     })
 
