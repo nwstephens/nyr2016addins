@@ -11,7 +11,7 @@ selectConn <- function() {
       verbatimTextOutput("selectedPort"),
       textInput('database', 'Database', 'airontime', width='100%'),
       textInput('uid', 'User ID', c('rstudioadmin'), width='100%'),
-      passwordInput("pwd", "Password", 'ABCd4321', width='100%')
+      passwordInput("pwd", "Password", '1111', width='100%')
     )
   )
 

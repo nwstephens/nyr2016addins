@@ -1,14 +1,14 @@
-Name: ODBC Connect
-Description: Connect to a data source.
-Binding: selectConn
-Interactive: true
+Name: Format Source
+Description: Format R source code with formatR (using default args).
+Binding: formatSource
+Interactive: false
 
 Name: Variable Profiler
 Description: Univariate profiler.
 Binding: variableProfiler
 Interactive: true
 
-Name: Format Source
-Description: Format R source code with formatR (using default args).
-Binding: formatSource
-Interactive: false
+Name: ODBC Connect
+Description: Connect to a data source.
+Binding: selectConn
+Interactive: true
